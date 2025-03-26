@@ -2,7 +2,7 @@ import React from "react";
 import AutoTyping from "./AutoType";
 import { motion } from "framer-motion";
 import {  useInView } from "react-intersection-observer";
-import programming from '../assets/programming.mp4'
+import programming from '../assets/Programming.mp4'
 import { Link } from "react-router-dom";
 function Home() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });

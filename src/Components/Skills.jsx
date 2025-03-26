@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { useInView } from "react-intersection-observer";
+import Navbar from "./Navbar";
 
 function Skills() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
     <div id="skills"ref={ref} >
-      
+      <Navbar/>
       <div className="container mt-5">
         <motion.h6
         

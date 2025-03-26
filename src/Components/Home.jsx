@@ -4,10 +4,13 @@ import { motion } from "framer-motion";
 import {  useInView } from "react-intersection-observer";
 import programming from '../assets/Programming.mp4'
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
+
 function Home() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
   return (
     <div ref={ref}>
+      <Navbar />
       <div
         className=" d-flex flex-wrap  "
         style={{ marginTop: "100px" }}

@@ -5,11 +5,13 @@ import todo from "../assets/todo.mp4";
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Navbar from "./Navbar";
 
 function Projects() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
   return (
     <div>
+      <Navbar/>
       <div className="container" style={{ marginTop: "70px" }}>
         <h6 style={{ textAlign: "center", color: "rgb(158, 156, 156)" }}>
           Projects

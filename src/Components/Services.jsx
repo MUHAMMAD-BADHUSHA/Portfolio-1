@@ -2,12 +2,14 @@ import React from "react";
 import webDev from "../assets/WebDev.mp4";
 import uiux from "../assets/uiux.mp4";
 import work from "../assets/Work.mp4";
+import Navbar from "./Navbar";
 
 
 
 function Services() {
   return (
    <div>
+    <Navbar/>
     
      <div className="container mt-5">
       <h6 style={{ textAlign: "center", color: "rgb(78, 73, 73)" ,paddingTop:'10px'}}>

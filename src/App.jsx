@@ -8,7 +8,7 @@ import Skills from './Components/Skills'
 import Projects from './Components/Projects'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
-import Navbar from './Components/Navbar'
+
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
     <div>
       
       <Router>
-        <Navbar/>
+        
         <Routes>
           <Route path='/' element={<HomePage/>} />
           <Route path='/home' element={<HomePage/>} />
@@ -29,6 +29,7 @@ function App() {
           <Route path='/projects' element={<Projects/>} />
           <Route path='/contact' element={<Contact/>} />
           </Routes>
+          
            <Footer />
       </Router>
       

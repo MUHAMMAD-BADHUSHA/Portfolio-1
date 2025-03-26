@@ -4,13 +4,14 @@ import about from '../assets/about.mp4'
 import AnimatedComponent from "./Animated/AnimatedComponent";
 import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
+import Navbar from "./Navbar";
 
 function About() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
     <div>
-      
+      <Navbar/>
       <div
         ref={ref}
         id="about"

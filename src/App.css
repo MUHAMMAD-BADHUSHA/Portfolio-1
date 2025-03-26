@@ -1,0 +1,28 @@
+.video-container {
+  width: 250px;
+  height: 250px; /* Full screen height */
+  position: relative;
+  overflow: hidden;
+  /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+}
+
+.video-container video {
+  align-self: center;
+  width: 250px;
+  height: 250px;
+  object-fit: cover; /* Ensure full coverage */
+}
+
+.bord {
+  border-top: "1px solid rgba(48, 47, 47, 0.86)";
+  border-bottom: "1px solid rgba(48, 47, 47, 0.86)";
+  border-radius: "30px";
+}
+.skillhover:hover{
+  background-color: rgb(43, 44, 43);
+}
+.maincolor{
+  color:'#00712D';
+}

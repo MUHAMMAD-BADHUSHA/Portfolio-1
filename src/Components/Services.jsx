@@ -1,7 +1,7 @@
 import React from "react";
-import webDev from "../assets/webDev.mp4";
+import webDev from "../assets/WebDev.mp4";
 import uiux from "../assets/uiux.mp4";
-import work from "../assets/work.mp4";
+import work from "../assets/Work.mp4";
 
 
 

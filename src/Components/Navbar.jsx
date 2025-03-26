@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "/avatar.png"; 
+import logo from "/avatar.png";
 
 function Navbar() {
   return (
@@ -28,22 +28,29 @@ function Navbar() {
         </Link>
 
         {/* Toggle Button for Mobile View */}
+       
         <button
-          className="navbar-toggler "
+          class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          style={{backgroundColor:'rgb(37, 248, 9)'}}
+          style={{ backgroundColor: "rgb(37, 248, 9)" }}
         >
-          <span className="navbar-toggler-icon  "></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         {/* Navbar Links */}
-        <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul className="navbar-nav d-flex justify-content-center" style={{ columnGap: "60px" }}>
+        <div
+          className="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul
+            className="navbar-nav d-flex justify-content-center"
+            style={{ columnGap: "60px" }}
+          >
             <li className="nav-item">
               <Link className="nav-link fw-bold text-light" to="/home">
                 Home
@@ -82,4 +89,3 @@ function Navbar() {
 }
 
 export default Navbar;
-

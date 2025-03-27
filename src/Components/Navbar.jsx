@@ -45,7 +45,7 @@ function Navbar() {
         <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul className="navbar-nav d-flex justify-content-center" style={{ columnGap: "60px" }}>
             <li className="nav-item">
-              <Link className="nav-link fw-bold text-light" to="/home">
+              <Link className="nav-link fw-bold text-light" to="/">
                 Home
               </Link>
             </li>

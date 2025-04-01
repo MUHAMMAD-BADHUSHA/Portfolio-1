@@ -62,11 +62,20 @@ function Home() {
             </Link>
           </motion.button>
         </div>
-        <div className="d-flex pt-5 flex-wrap justify-content-center col-12 col-sm-12 col-md-6 col-lg-6 col-md-6 col-xl-6">
-          
-            <img src={pic1} style={{maxWidth:'300px' ,minWidth:'150px',borderRadius:'50%'}} alt="" />
-          
-        </div>
+        <motion.div className="d-flex pt-5 flex-wrap justify-content-center col-12 col-sm-12 col-md-6 col-lg-6 col-md-6 col-xl-6"
+        initial={{ opacity: 0, x: +50 }}
+        animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: +50 }}
+        transition={{ duration: 1.5 }}>
+          <img
+            src={pic1}
+            style={{
+              maxWidth: "300px",
+              minWidth: "150px",
+              borderRadius: "50%",
+            }}
+            alt=""
+          />
+        </motion.div>
       </div>
     </div>
   );

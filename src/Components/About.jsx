@@ -57,7 +57,7 @@ function About() {
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -80 }}
             transition={{ duration: 1 }}
             className="btn"
-            style={{ backgroundColor: "#39CD14" }}
+            style={{ backgroundColor: "#39CD14",marginBottom:'18px'}}
           >
             <Link
               style={{

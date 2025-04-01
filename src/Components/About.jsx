@@ -53,8 +53,8 @@ function About() {
           </motion.h4>
           <AnimatedComponent />
           <motion.button
-            initial={{ opacity: 0, y: +300 }}
-            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: +300 }}
+            initial={{ opacity: 0, x: -80 }}
+            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -80 }}
             transition={{ duration: 1 }}
             className="btn"
             style={{ backgroundColor: "#39CD14" }}
@@ -71,7 +71,11 @@ function About() {
             </Link>{" "}
           </motion.button>
         </div>
-        <div className="col-12 col-sm-12 col-md-6 col-xl-5 d-flex justify-content-center ">
+        <motion.div className="col-12 col-sm-12 col-md-6 col-xl-5 d-flex justify-content-center "
+        initial={{ opacity: 0, y: +80 }}
+        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: +80 }}
+        transition={{ duration: 1 }}
+        >
           <img
             src={pic2}
             style={{
@@ -82,7 +86,7 @@ function About() {
             }}
             alt=""
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

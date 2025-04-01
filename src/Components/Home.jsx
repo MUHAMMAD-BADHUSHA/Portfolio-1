@@ -1,8 +1,8 @@
 import React from "react";
 import AutoTyping from "./AutoType";
 import { motion } from "framer-motion";
-import {  useInView } from "react-intersection-observer";
-import programming from '../assets/Programming.mp4'
+import { useInView } from "react-intersection-observer";
+import pic1 from "/pic1.jpeg";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 
@@ -21,9 +21,8 @@ function Home() {
           style={{ marginTop: "70px" }}
         >
           <motion.div
-          
             initial={{ opacity: 0, y: -50 }}
-            animate={inView?{opacity: 1, y: 0}:{ opacity: 0, y: -50}  }
+            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
             transition={{ duration: 1.5 }}
           >
             <h4>Hello,</h4>
@@ -40,9 +39,8 @@ function Home() {
           </motion.div>
 
           <motion.button
-            
             initial={{ opacity: 0, x: -20 }}
-            animate={inView?{ opacity: 1, x: 0 }:{opacity: 0, x: -20 }}
+            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
             transition={{ duration: 1.5 }}
             className="btn btn-outline-light rounded-4 fw-bold me-3"
             style={{
@@ -53,25 +51,22 @@ function Home() {
             Resume
           </motion.button>
           <motion.button
-            
             initial={{ opacity: 0, x: +50 }}
-            animate={inView?{ opacity: 1, x: 0 }:{ opacity: 0, x: +50 }}
+            animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: +50 }}
             transition={{ duration: 1.5 }}
             className="btn rounded-4 fw-bold text-light"
             style={{ backgroundColor: "rgb(11, 209, 21)" }}
           >
-           <Link to={'/contact'} className="text-decoration-none text-light">Contact me</Link> 
+            <Link to={"/contact"} className="text-decoration-none text-light">
+              Contact me
+            </Link>
           </motion.button>
         </div>
         <div className="d-flex pt-5 flex-wrap justify-content-center col-12 col-sm-12 col-md-6 col-lg-6 col-md-6 col-xl-6">
-          <div className="video-container  ">
-          <video autoPlay muted >
-            <source src={programming} type="video/mp4"  />
-            Your browser does not support the video tag.
-          </video>
+          
+            <img src={pic1} style={{maxWidth:'300px' ,minWidth:'150px',borderRadius:'50%'}} alt="" />
+          
         </div>
-        </div>
-        
       </div>
     </div>
   );
